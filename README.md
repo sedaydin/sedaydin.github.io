@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+SEDA AYDIN
 
 You can use the [editor on GitHub](https://github.com/sedaydin/sedaydin.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
