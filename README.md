@@ -1,0 +1,2 @@
+# sedaydin.github.io
+Yeni
