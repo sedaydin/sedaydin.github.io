@@ -1,0 +1,238 @@
+* {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-image: url(https://images.pexels.com/photos/264594/pexels-photo-264594.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bigBoy {
+  margin: 20px auto;
+  width: 80%;
+  height: auto;
+  position: relative;
+}
+
+/* Big Div */
+
+.user {
+  position: relative;
+  margin: 10px auto;
+  border: 2px solid #808080e0;
+  width: 95%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #fbfbfb87;
+}
+
+/* User Section */
+
+.userPic {
+  background-image: url(https://images.pexels.com/photos/423364/pexels-photo-423364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -ms-transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+  width: 25%;
+  height: 100%;
+  margin-left: 0px;
+  background-color: #fdfdfd;
+  border: 10px solid #2a382a;
+  border-radius: 50%;
+  position: absolute;
+  left: -1%;
+  transition-property: border;
+  transition-duration: 1.2s;
+  transition-timing-function: cubic-bezier(0, 2.97, 1, 4.43);
+  -webkit-transition-property: border;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0, 1.46, 0.12, 1.46);
+}
+
+.userPic:hover {
+  border: 10px solid #009688;
+}
+
+/* User Picture */
+
+.comment {
+  position: relative;
+  margin: 10px auto;
+  background-color: #fbfbfb87;
+  border: 2px solid #8c8c8c;
+  width: 95%;
+  height: 500px;
+  overflow-y: auto;
+}
+
+/* Comment Section */
+
+.inputComment {
+  width: 75%;
+  height: 90%;
+  position: absolute;
+  right: 2%;
+  margin-top: 12px;
+}
+
+/*  Input Section and Puplic Button */
+
+.inputComment,
+.userPic {
+  display: inline-block;
+}
+
+.puplicComment {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 15%;
+}
+
+/*  Place where Button is */
+
+.puplicComment > button {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  margin-left: 5%;
+  font-size: 25px;
+  background-color: whitesmoke;
+  border: 1px solid #b5abab;
+  border-radius: 2px;
+  transition-property: all;
+  transition-duration: 0.1s;
+}
+
+.puplicComment > button:hover {
+  border: 2px solid #4caf50;
+  background-color: #c3c3c3ab;
+  border-radius: 15px;
+}
+
+.inputText {
+  position: relative;
+  width: 95%;
+  height: 75%;
+  margin: 1% auto auto auto;
+}
+
+/* Place where textarea and user name are */
+
+input {
+  position: absolute;
+  top: -5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 30%;
+  height: 35px;
+  text-align: center;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+input:focus {
+  border: 3px solid #7d7a7a;
+}
+
+textarea {
+  top: 40px;
+  resize: none;
+  width: 100%;
+  right: 0px;
+  position: absolute;
+  padding-top: 35px;
+  height: 70%;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #cac3c300;
+  border-radius: 12px;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+textarea:hover {
+  border: 2px solid #cac3c3;
+}
+
+textarea:focus {
+  border: 3px solid #7d7a7a;
+}
+
+/* -------------------------- Comments -------------------------- */
+
+.lastComment {
+  position: relative;
+  margin: 20px auto;
+  width: 95%;
+  height: 35%;
+  border: 2px solid;
+  background-color: #fbfbfbfa;
+  box-shadow: 4px 4px 12px 1px #00000099;
+}
+
+.userPictureComment {
+  background-image: url(https://images.pexels.com/photos/423364/pexels-photo-423364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid #2a382a;
+  border-radius: 17%;
+  transition-property: border;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 2.97, 1, 4.43);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -16px;
+  left: -12px;
+  transform: scale(0.7, 0.7);
+}
+
+.userPictureComment:hover {
+  border: 5px solid #009688;
+}
+
+.lastComment > .userLastCommentName {
+  position: absolute;
+  background-color: #eaeaeabd;
+  border: 2px solid #807f7d;
+  border-radius: 2px;
+  width: 23%;
+  height: 18%;
+  top: 9px;
+  right: 54%;
+  font-size: 18px;
+  padding: 4px;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-weight: lighter;
+}
+
+.userLastComment {
+  position: absolute;
+  background-color: #eaeaeabd;
+  border: 2px solid #807f7d;
+  border-radius: 2px;
+  overflow: auto;
+  width: 75%;
+  height: 65%;
+  top: 45px;
+  right: 20px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-weight: lighter;
+}
+
+.userLastComment > p {
+  color: #025d54eb;
+}
